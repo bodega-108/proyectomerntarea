@@ -24,7 +24,6 @@ import {REGISTRO_EXITOSO,
         const registrarUsuario = async datos =>{
             try {
                 const respuesta = await clienteAxios.post('/api/usuario',datos);
-                // console.log(respuesta)
                 dispatch({
                     type:REGISTRO_EXITOSO,
                     payload:respuesta.data
